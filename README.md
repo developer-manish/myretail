@@ -8,27 +8,37 @@ It is built on Spring Boot framework with other relevant dependencies.
 ### Frameworks and Maven dependencies used :-
 * [1] SpringBoot
 * [2] Maven
-* [3] Swagger
-* [4] Liquibase for db changes versioning
-* [5] H2 Database to reduce the dependency on external db.
-* [6] Apache DBCP for database connection pooling.
-* [7] spring-boot-starter-web for developing rest services.
-* [8] spring-boot-starter-validation for validation of requests.
-* [9] spring-boot-starter-cache for caching product-info obtained from third party service.
-* [10] spring-boot-starter-data-jpa for interactions with db.
-* [11] spring-boot-starter-test for Unit & Integration Tests.
-* [12] spring-boot-devtools for development with live reloading.
+* [3] Docker
+* [4] Swagger
+* [5] Liquibase for db changes versioning
+* [6] H2 Database to reduce the dependency on external db.
+* [7] Apache DBCP for database connection pooling.
+* [8] spring-boot-starter-web for developing rest services.
+* [9] spring-boot-starter-validation for validation of requests.
+* [10] spring-boot-starter-cache for caching product-info obtained from third party service.
+* [11] spring-boot-starter-data-jpa for interactions with db.
+* [12] spring-boot-starter-test for Unit & Integration Tests.
+* [13] spring-boot-devtools for development with live reloading.
 
 
 ### Prerequisites:-
 * [1] SpringBoot Tool suite or any IDE framework for ease of use.
 * [2] Maven
+* [3] Docker (Optional)
 
 ### How to start application ?
 1. Execute mvn spring-boot:run command to build and run app or use samples/myretail-1.0.0.jar which is committed separately. 
 2. Run the below command to start app.
 
 java -jar myretail-1.0.0.jar
+
+3. Optional (If docker is installed), Please run below commands in the root folder.
+   i.) To build application,
+       mvn clean install
+  ii.) To build docker-image,
+       docker build -t myretail .
+ iii.) To run image in docker-container,
+       docker run -p 8080:8080 myretail
 
 ### Use Swagger UI to test services
 Swagger UI is available at http://localhost:8080/swagger-ui.html
