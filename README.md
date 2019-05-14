@@ -25,7 +25,7 @@ It is built on Spring Boot framework with other relevant dependencies.
 * [2] Maven
 
 ### How to start application ?
-1. Build project using - mvn spring-boot:run to build jar or use samples/myretail-1.0.0.jar which is committed separately. 
+1. Execute mvn spring-boot:run command to build and run app or use samples/myretail-1.0.0.jar which is committed separately. 
 2. Run the below command to start app.
 
 java -jar myretail-1.0.0.jar
