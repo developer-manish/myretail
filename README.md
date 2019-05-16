@@ -65,7 +65,7 @@ Below are the sample request and response for the services,
   {"currency_code": "USD", "value": 3.80}
   
   Response :
-  {"id":13860327,"name":"Conan the Barbarian (Blu-ray)","current_price":{"currency_code":"USD","value":3.90}}
+  {"code": 201, "message": "Product price details are added."}
 
 * [3] To get product details,
   
@@ -78,7 +78,7 @@ Below are the sample request and response for the services,
   {"currency_code": "USD", "value": 3.90}
   
   Response :
-  {"id":13860327,"name":"Conan the Barbarian (Blu-ray)","current_price":{"currency_code":"USD","value":3.90}}
+  {"code": 200, "message": "Product price details are updated."}
 
     
   
